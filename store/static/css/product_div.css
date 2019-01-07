@@ -1,0 +1,87 @@
+.second{
+	float: left;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 180px;
+	height: 300px;
+	float: left;
+	border:3px solid red;		
+	border-radius: 10px;
+	background-color: #97B274;
+	padding-left: 10px;
+	
+}
+.second .circle-img{
+	height: 200px;
+	padding-left: 10px;
+}
+.form-class{
+	float: left; 
+}
+.form-div{
+	margin: 10px 0px;
+	float: left;
+}
+body{
+	background-color: #C8A548;
+}
+.tm-head{
+	background:white;
+	border:4px solid red;
+}
+.tm-container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.tm-head::after{
+	content: " ";
+	clear: both;
+	visibility: none;
+	display: block;
+}
+.tm-nav{
+	float:left;
+}
+.tm-logo{
+	float: left;
+}
+.tm-nav ul{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.tm-nav ul li{
+	display: inline-block;
+	font-size: 20px;
+}
+.tm-nav ul li a{
+	padding: 10px 20px;
+	text-decoration: none;
+	color: black;
+	line-height: 40px;
+}
+.tm-nav ul li a:hover{
+	color: blue;
+}
+h1,h2,h3,h4,h5,h6{
+	margin-top: 10px;
+}
+.list-product {
+	margin-top: 0px;
+	border:4px solid red;
+	width: 1343px;
+	height: 40px;
+	float: left;
+	background-color: white;
+}
+.list-product::after{
+	content: " ";
+	clear: both;
+	visibility: none;
+	display: block;
+}
+
+.cust-form{
+	float: right;
+	text-align: left;
+}

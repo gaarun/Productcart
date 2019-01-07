@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Search</title>
+  <link rel="stylesheet" type="text/css" href="product_div.css">
+ </head>
+ <body>
+ <nav class="form-class" align='center'>
+	 <form action="" method="POST">
+	 <div class='form-div'>
+		 <label for="search_str"><strong>Search:</strong></label>
+		 <input id="search_str" type="text" name="search_str" size=50>
+		<input type="submit" value="search">
+		</div>
+	</form>
+ </nav>
+ </body>
+</html>

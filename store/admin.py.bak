@@ -1,0 +1,19 @@
+from django.contrib import admin
+from store.models import Products,Employee,Customer
+
+# Register your models here.
+class ProductAdmin(admin.ModelAdmin):
+	list_display	=	("id","product_name","product_mrp","price","product_desc","product_mfg_date","expired","product_type","number_of_products")
+	search_fields	=	("id","product_name","product_desc","product_type")
+	list_filter		=	("product_type","product_exp_date")
+	#list_editable   =	("product_name",)
+admin.site.register(Products,ProductAdmin)
+
+
+#Register yor employee admin here.
+class EmployeeAdmin(admin.ModelAdmin):
+	list_display	=	("name","father_name","gender","dob","age","salary","join_date","experience","mail_id","mobile_number","address","greeting")
+	search_fields	=	("id","first_name","mail_id","mobile_number")
+	list_filter		=	("salary",)
+admin.site.register(Employee,EmployeeAdmin)
+admin.site.register(Customer)

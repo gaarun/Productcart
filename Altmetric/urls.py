@@ -1,0 +1,24 @@
+from django.conf.urls import include, url
+from django.contrib import admin
+from store import views
+from cart.views import *
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    # Examples:
+    # url(r'^$', 'Altmetric.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+	url(r'^cart/',cart_home),
+    url(r'^kitchenneeds/',views.kitchen),
+    url(r'^fashion/',views.fashion),
+    url(r'^homeneeds/',views.homeneeds),
+    url(r'^footwear/',views.footwear),
+	url(r'^stationary/',views.stationary),
+	url(r'^electronic/',views.electronic),
+	url(r'^product/',views.product),
+	url(r'^home/',views.home),
+	url(r'^customer/',views.customer),
+	#url(r'^admin/', include(admin.site.urls)),
+]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

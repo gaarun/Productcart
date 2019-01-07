@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Product</title>
+  {% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/product_div.css' %}">
+ </head>
+ <body>
+ 	{% include "home.html" %}
+	{% for each in product %}
+ <div class="second">
+	<em><strong>{{	each.product_type }}</strong></em><br>
+	<img class = "circle-img" src='{{media}}{{each.product_image.name}}' align="center"><br/>
+	<strong><a href="/product/">{{ each.product_name }}</a></strong><br/>
+	<label><strong>Price:</strong></label>{{ each.price }}<br>
+</div>
+  {% endfor %}
+ </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/product_div.css' %}">
+	<link rel="icon" href="{% static 'images/r_icon.png' %}">
+</head>
+<body>
+	<header class="tm-head">
+		<div class="tm-container" >
+		
+			<img src="{% static 'images/logo.png' %}" width="120" class="tm-logo" />
+			<nav class="tm-nav">
+				<ul>
+					{% include "search.html" %}
+					<li><a href="/home">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="/customer/">SignUp</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="list-product">
+		<nav class="tm-nav">
+			<ul>
+				<li><a href="/electronic/">Electronic</a></li>
+				<li><a href="/stationary/">Stationary</a></li>
+				<li><a href="/kichenneeds/">KichenNeeds</a></li>
+				<li><a href="/homeneeds/">Homeneeds</a></li>
+				<li><a href="/footwear">Footwear</a></li>
+				<li><a href="/fashion">Fashion</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>
